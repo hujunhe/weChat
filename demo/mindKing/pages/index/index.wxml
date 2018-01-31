@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class='contain'>
+  <view class="holder1"></view>
+  <view class='holder2'></view>
+  <scroll-view class='main' scroll-y>
+    <view class='myInfo'>信息 </view>
+    <view class='scrollContain'>
+      <view class='rank box'>排位</view>
+      <view class='shop box'>商店</view>
+      <view class='bank box'>银行</view>
+      <view class='knowledgeLevelUp box'>知识升级</view>
+      <!-- <view class='item box'>物品</view> -->
+      <navigator url="/pages/items/items" class='item box' hover-class="navigator-hover">物品</navigator>
+      <view class='billBoard box'>排行</view>
+      <view class='friendPk box'>好友对战</view>
+      <view class='questFactory box'>题目工厂</view>
+      <view class='setting box' bindtap='showSettingBox' >设置</view>
+    </view>
+  </scroll-view>
+  <view class='logo'>
+  </view>
+  <view class='helper {{helperAnimate=== true?"ani":""}}'>
+    <view class='icon'></view>
+    <view class='word'>
+      <text class='title_1'>头脑王者</text>
+      <text class='title_2'>小助手</text>
+    </view>
+  </view>
+  <view class='settingShow {{settingBoxBindStyle === true?"show":""}}'>
+    <view class='settingBox {{settingBoxBindStyle ===true?"ani":""}}'>
+      <view class='icon'>图标</view>
+      <view class='close' catchtap='closeSetting'>X</view>
+      <view class='setting_word title'>
+        <text>设置</text>
+      </view>
+      <view class='setting_word'>
+        <label>
+          <text class='name'>推送</text>
+          <switch color="#309ce3" class='switchStyle' bindchange='pushStatus'></switch>
+        </label>
+      </view>
+      <view class='setting_word'>
+        <label>
+          <text class='name'>音效</text>
+          <switch class='switchStyle' bindchange='soundStatus'></switch>
+        </label>
+      </view>
+    </view>
+    <view class='mask'></view>
+
+  </view>
+</view>

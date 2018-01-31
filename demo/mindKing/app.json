@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/items/items",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4451a0",
+    "navigationBarTitleText": "头脑王者-知乎赛季",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#d4eaff"
+  }
+}

@@ -1,0 +1,40 @@
+<!--pages/items/items.wxml-->
+<view class='contain'>
+  <view class='holder1 part'></view>
+  <view class='itemBox'>
+    <view class='oneItem' wx:for="{{items}}" bindtap='showItemDetail' data-id="{{index}}">
+      <view class='item_name'>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='item_img' >
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class='item_num'>
+        <text>X{{item.num}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='holder2 part'></view>
+  <view class='tips'>
+    <text>点击即可使用物品</text>
+  </view>
+  <view class='itemDetailShow {{showItem === true?"show":""}}'>
+    <view class='mask'></view>
+    <view class='itemDetailBox {{showItem === true?"ani":""}}'>
+      <view class='close' bindtap='closeItemDetail'>X</view>
+      <view class='icon'>
+        <image wx:src="{{showItemDetail.img}}"></image>
+      </view>
+      <view class='itemName'>
+        <text>{{showItemDetail.name}}</text>
+      </view>
+      <view class='itemBuff'>
+      <text>{{showItemDetail.content}}</text>
+      </view>
+      <view class='count'>剩余数量：{{showItemDetail.num}}</view>
+      <view>
+        <button>使用</button>
+      </view>
+    </view>
+  </view>
+</view>
