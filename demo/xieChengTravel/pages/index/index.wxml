@@ -1,0 +1,6 @@
+<!-- index -->
+<banner></banner>
+<indexList></indexList>
+<navigator class='newYearBag_a' open-type='navigate' url="../../pages/happyWeekend/happyWeekend">
+  <image class='newYearBag' src='../../asset/index_bag.jpg'></image>
+</navigator>

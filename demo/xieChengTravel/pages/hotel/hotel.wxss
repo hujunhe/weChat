@@ -1,0 +1,64 @@
+/* pages/hotel/hotel.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+}
+.localBox{
+  display: flex;
+  flex-direction: row;
+  height: 133rpx;
+  align-items: center;
+  text-align: center; 
+  font-size: 30rpx;
+}
+
+
+.searchBox{
+  border: 1rpx solid #e3e3e3;
+  border-radius: 50rpx;
+  display: flex;
+  width: 662rpx;
+  margin: 0 auto;
+  height: 108rpx;
+  align-items: center;
+  padding: 0 34rpx;
+}
+.timeCheck{
+  font-size: 25rpx;
+  display: flex;
+  flex-direction: column;
+  border-right: 1rpx solid #eaeaea;
+  padding-right: 50rpx;
+}
+.icon_search{
+  margin-right: 20rpx;
+}
+.searchInput{
+  display: flex;
+  font-size: 30rpx;
+  padding-left: 50rpx;
+}
+.searchInput input{
+  width: 400rpx;
+}
+.order{
+  display: flex;
+  height: 77rpx;
+  align-items: center;
+  text-align: center;
+  font-size: 27rpx;
+  border-bottom: 1rpx solid #eaeaea;
+}
+
+.part9{
+  flex: 9 1 auto;
+}
+.part1{
+  flex:1 0 auto;
+}
+.part5{
+  flex: 1 1 auto;
+}
+infinityScroll{
+  height: 880rpx;
+}

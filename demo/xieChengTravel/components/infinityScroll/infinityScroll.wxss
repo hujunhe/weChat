@@ -1,0 +1,74 @@
+/* components/infinityScroll/infinityScroll.wxss */
+.scrollPart{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/*酒店列表*/
+.oneItem_hotel{
+  height: 204rpx;
+  width: 750rpx;
+  border-bottom: 1rpx solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+}
+.oneItem_hotel .picBox{
+  width: 204rpx;
+  height: 204rpx;
+  flex: 0 0 auto;
+  margin-right: 20rpx;
+}
+.oneItem_hotel .pic{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.oneItem_hotel .detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 358rpx;
+  margin-right: 15rpx;
+  flex: 0 1 auto;
+}
+.oneItem_hotel .detail text{
+  margin-right: 15rpx;
+}
+.oneItem_hotel .name{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.oneItem_hotel .score{
+  font-size: 20rpx;
+  color: #3f98d7;
+}
+.oneItem_hotel .num{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.oneItem_hotel .content{
+  font-size: 28rpx;
+  color: #aaa9aa;
+}
+.oneItem_hotel .prize{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 22rpx;
+}
+.oneItem_hotel .discount{
+  font-size: 22rpx;
+  color: #aaa9aa;
+}
+.oneItem_hotel .moneyType{
+  font-size: 18rpx;
+  color: #ee8437;
+}
+.oneItem_hotel .money{
+  font-size: 30rpx;
+   color: #ee8437;
+}
+.oneItem_hotel .more{
+  font-size: 28rpx;
+  color: #aaa9aa;
+}

@@ -1,0 +1,29 @@
+<!--pages/hotel/hotel.wxml-->
+<view class='localBox'>
+  <view class='part9'>
+    <text>北京</text>
+    <!-- <navigator></navigator> -->
+  </view>
+  <view class='part1'>
+    <text>附近</text>
+  </view>
+</view>
+<view class='searchBox'>
+  <view class='timeCheck'>
+    <text>住 02-01</text>
+    <text>离 02-02</text>
+  </view>
+  <view class='searchInput'>
+    <icon type='search' class='icon_search'></icon>
+    <input placeholder='关键字/位置/品牌/酒店名'></input>
+  </view>
+</view>
+<view class='order'>
+  <view class='part5' style='border-right:1rpx solid #eaeaea;'>
+    <text>价格/星级</text>
+  </view>
+  <view class='part5'>
+    <text>欢迎度排序</text>
+  </view>
+</view>
+<infinityScroll dataType="{{list.dataType}}" list="{{list.data}}"> </infinityScroll>

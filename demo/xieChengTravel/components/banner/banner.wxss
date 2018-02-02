@@ -1,0 +1,9 @@
+/* components/banner/banner.wxss */
+.swiperBox{
+  width: 100%;
+  height: 191rpx;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+}

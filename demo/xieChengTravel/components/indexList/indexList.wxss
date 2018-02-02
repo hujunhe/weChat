@@ -1,0 +1,71 @@
+/* components/indexList/indexList.wxss */
+
+.indexListBox {
+  width: 94%;
+  margin: 26rpx auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5rpx;
+}
+
+.oneItem {
+  width: 224rpx;
+  height: 231rpx;
+  margin-bottom: 15rpx;
+  color: #fff;
+}
+
+.oneItem image {
+  width: 100rpx;
+  height: 80rpx;
+}
+
+.oneItem navigator {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneItem:nth-child(1) {
+  border-radius: 15rpx 0 0 0;
+  background-color: #e8635c;
+}
+
+.oneItem:nth-child(2) {
+  background-color: #579eee;
+}
+
+.oneItem:nth-child(3) {
+  border-radius: 0 15rpx 0 0;
+  background-color: #60b6f9;
+}
+
+.oneItem:nth-child(4) {
+  background-color: #76d78c;
+}
+
+.oneItem:nth-child(5) {
+  background-color: #62cbb2;
+}
+
+.oneItem:nth-child(6) {
+  background-color: #e8635c;
+}
+
+.oneItem:nth-child(7) {
+  border-radius: 0 0 0 15rpx;
+  background-color: #f3c154;
+}
+
+.oneItem:nth-child(8) {
+  background-color: #f0b051;
+}
+
+.oneItem:nth-child(9) {
+  border-radius: 0 0 15rpx 0;
+  background-color: #eb964a;
+}

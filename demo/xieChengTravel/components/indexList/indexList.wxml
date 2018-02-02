@@ -1,0 +1,12 @@
+<!--components/indexList/indexList.wxml-->
+<view class='indexListBox'>
+
+  <view wx:for="{{list}}" class='oneItem'>
+    <navigator open-type='navigate' url="{{item.href}}">
+      <text>{{item.name}}</text>
+      <image src="{{item.imgSrc}}"></image>
+    </navigator>
+  </view>
+
+
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "酒店列表",
+  "usingComponents":{
+    "infinityScroll":"../../components/infinityScroll/infinityScroll"
+  }
+}

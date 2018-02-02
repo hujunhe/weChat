@@ -1,0 +1,37 @@
+<!--components/infinityScroll/infinityScroll.wxml-->
+<scroll-view class='scrollPart' scroll-y="true" bindscrolltolower="update" lower-threshold="100"	>
+  <block wx:if="{{dataType === 'hotel'}}">
+    <block wx:for="{{list}}">
+      <navigator open-type='navigate' url="../../pages/detail/detail?type={{dataType}}&code={{item.code}}">
+        <view class='oneItem_hotel' >
+        <view class='picBox'>
+          <image mode='scaleToFill' lazy-load="true" class='pic' src="{{item.imgSrc}}"></image>
+        </view>
+        <view class='detail'>
+          <text class='name'>{{item.name}}</text>
+          <view>
+            <view>
+              <text class='score'><text class='num'>{{item.score}}</text>分</text>
+              <text class='content'>{{item.disscusPeople}}人点评</text>
+              <text class='content'>{{item.level}}</text>
+            </view>
+            <view>
+              <text class='content'>{{item.distance}}</text>
+              <text class='content'>·</text>
+              <text class='content'>{{item.near}}</text>
+            </view>
+          </view>
+        </view>
+        <view class='prize'>
+          <text class='discount'>{{item.discount === ""?"":item.discount}}</text>
+          <view>
+            <text class='moneyType'>￥</text>
+            <text class='money'>{{item.prize}}</text>
+            <text class='more'>起</text>
+          </view>
+        </view>
+      </view>
+      </navigator>
+    </block>
+  </block>
+</scroll-view>

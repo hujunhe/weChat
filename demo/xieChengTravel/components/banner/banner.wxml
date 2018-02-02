@@ -1,0 +1,12 @@
+<!--components/banner/banner.wxml-->
+<view class='swiperBox'>
+  <swiper indicator-dots="true">
+    <block>
+      <swiper-item wx:for="{{list}}">
+        <navigator open-type='navigate' url="{{item.herf}}">
+          <image src="{{item.imgSrc}}"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
