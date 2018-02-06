@@ -63,7 +63,7 @@ page{
 .box{
   font-size: 26rpx;
   color: #606060;
-  width: 150rpx;
+  min-width: 150rpx;
   height: 65rpx;
   border: 2rpx solid #dcdcdc;
   border-radius: 15rpx;

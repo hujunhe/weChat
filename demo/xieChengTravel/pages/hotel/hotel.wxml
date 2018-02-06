@@ -1,7 +1,8 @@
 <!--pages/hotel/hotel.wxml-->
 <view class='localBox'>
   <view class='part9'>
-    <text>北京</text>
+    
+    <navigator url='../locationPicker/locationPicker'><text>北京</text></navigator>
     <!-- <navigator></navigator> -->
   </view>
   <view class='part1'>

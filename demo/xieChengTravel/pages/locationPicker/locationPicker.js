@@ -8,31 +8,45 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    provincesList:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getLocationFn()
+    console.log("地址选择onload")
   },
   getLocationFn () {
+    let list = local.provinces;
+    this.setData({ provincesList:list})
     
-    
+  },
+  chooseLocalFn (e) {
+    console.log(1)
+    let area = e.target.dataset.area
+    wx.navigateBack({
+      url: '../../pages/hotel/hotel?area=' + area,
+      success:function(d){
+        console.log(d)
+      },
+      fail:function(d){
+        console.log(d)
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    this.getLocationFn()
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    console.log("地址选择onshow")
   },
 
   /**
