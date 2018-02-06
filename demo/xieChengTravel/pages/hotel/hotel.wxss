@@ -24,11 +24,11 @@ page{
   padding: 0 34rpx;
 }
 .timeCheck{
+  flex: 1 0 auto;
   font-size: 25rpx;
   display: flex;
   flex-direction: column;
   border-right: 1rpx solid #eaeaea;
-  padding-right: 50rpx;
 }
 .icon_search{
   margin-right: 20rpx;

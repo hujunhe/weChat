@@ -1,0 +1,45 @@
+<block wx:for="{{dataList}}">
+  <view class='roomAbout'>
+    <view class='room_info'>
+      <view class='room_pic'>
+        <image src="{{item.imgSrc}}"></image>
+      </view>
+      <view class='room_type'>
+        <text>{{item.roomName}}</text>
+        <text>{{item.area}}m² {{item.bed}}床 {{item.floor}}层</text>
+      </view>
+      <view class='room_prize'>
+        <text>￥</text>
+        <text>{{item.prize}}</text>
+        <text>起</text>
+      </view>
+      <view>
+        <text style='color:#7cbef1;' bindtap='showListFn' data-index="{{index}}">{{index_choose === index?"↓":"↑"}}</text>
+      </view>
+    </view>
+    <block wx:if="{{index_choose === index}}">
+      <view class='roomDetail'  wx:for="{{item.list}}" wx:for-item="_item">
+      <view class='left'>
+        <view class='word'>
+          <text class='title'>{{_item.title}}</text>
+          <text class='content'>{{_item.direction}} {{item.bed}}床 {{_item.people}}人</text>
+          <text class='content'>{{_item.cancel === false ?"不可取消":"可取消"}}</text>
+        </view>
+        <text class='arrow'>></text>
+      </view>
+      <view class='right'>
+        <view class='room_prize'>
+          <text>￥</text>
+          <text>{{_item.prize}}</text>
+        </view>
+        <view class='way'>
+          <text class='big'>预定</text>
+          <text class='small'>在线付</text>
+        </view>
+      </view>
+
+    </view>
+    </block>
+
+  </view>
+</block>

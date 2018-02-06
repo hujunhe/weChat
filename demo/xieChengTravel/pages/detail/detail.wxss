@@ -1,1 +1,165 @@
 /* pages/detail/detail.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+
+/*通用*/
+
+.scoreAndDiscuss, .location, .timeCheck {
+  display: flex;
+  background-color: #fff;
+  padding: 0 32rpx;
+}
+
+.picBox {
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+}
+
+.pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pic image {
+  width: 100%;
+  height: 100%;
+}
+
+.picBox .word {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 36rpx * 2);
+  height: 78rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.word text {
+  margin-right: 20rpx;
+}
+
+.word .hotelName {
+  font-size: 30rpx;
+}
+
+.word .hotelLevel {
+  font-size: 22rpx;
+}
+
+.word .hotelTimeStart {
+  font-size: 22rpx;
+}
+
+.word .photo {
+  font-size: 28rpx;
+}
+
+.scoreAndDiscuss {
+  font-size: 26rpx;
+  height: 90rpx;
+  align-items: center;
+  color: #ababab;
+  border-bottom: 1rpx solid #f5f4f5;
+}
+
+.score {
+  min-width: 612rpx;
+}
+
+.score .scoreP {
+  font-size: 24rpx;
+  color: #58aced;
+  margin-right: 16rpx;
+}
+
+.score .scoreN {
+  font-size: 30rpx;
+}
+
+.disscus {
+  flex: 1 0 auto;
+  color: #58aced;
+}
+
+.location {
+  min-height: 90rpx;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.location_detail {
+  max-width: 612rpx;
+}
+
+.location_detail text:first-child {
+  font-size: 28rpx;
+}
+
+.location_detail text:last-child {
+  font-size: 24rpx;
+  color: #ababab;
+  margin-left: 10rpx;
+}
+
+.maps {
+  font-size: 26rpx;
+  color: #58aced;
+}
+
+.timeCheck {
+  text-align: center;
+  height: 90rpx;
+  align-items: center;
+  border-bottom: 1rpx solid #f5f4f5;
+}
+.timeCheck .time:first-child{
+  border-right: 1rpx solid #f5f4f5;
+}
+.timeCheck .time {
+  flex: 1 1 auto;
+}
+.timeCheck .time text:first-child{
+  font-size: 30rpx;
+  margin-right: 22rpx;
+}
+.timeCheck .time text:last-child{
+  font-size: 25rpx;
+  color: #ababab;
+}
+.devTitle{
+  font-size: 28rpx;
+  margin: 28rpx 23rpx;
+  color: #696969;
+}
+.oneDev{
+  padding: 26rpx 23rpx;
+  background-color: #fff;
+}
+.oneDev .devName{
+  font-size: 27rpx;
+  font-weight: bold;
+}
+.oneDev .devList{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 23rpx;
+}
+.oneDev .devList text{
+  font-size: 26rpx;
+  width: 33%;
+  margin-bottom: 20rpx;
+
+}

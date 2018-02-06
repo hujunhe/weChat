@@ -1,0 +1,41 @@
+<!--pages/locationPicker/locationPicker.wxml-->
+<view class='searchBox'>
+  <input type='text' placeholder='中文/拼音/首字母'></input>
+</view>
+<view class='localChoose'>
+  <view class='part active'>
+    <text>国内</text>
+  </view>
+  <view class='part'>
+    <text>国际/地区</text>
+  </view>
+</view>
+<view class='normalBox'>
+  <view class='partT'>
+    <text>当前</text>
+  </view>
+  <view class='partB'>
+    <view class='box'>我的位置</view>
+    <text class='word'>朝阳区紫月路</text>
+  </view>
+</view>
+<view class='normalBox'>
+  <view class='partT'>
+    <text>历史选择</text>
+  </view>
+  <view class='partB'>
+    <view class='box'>北京</view>
+  </view>
+</view>
+<view class='normalBox'>
+  <view class='partT'>
+    <text>人们城市</text>
+  </view>
+  <view class='partB'>
+    <view class='box'>北京</view>
+    <view class='box'>上海</view>
+    <view class='box'>广州</view>
+    <view class='box'>深圳</view>
+    <view class='box'>成都</view>
+  </view>
+</view>

@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents":{
+    "roomSelect":"../../components/hotelRoomSelect/hotelRoomSelect"
+  }
+}

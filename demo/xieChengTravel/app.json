@@ -1,11 +1,13 @@
 {
   "pages": [
+    "pages/locationPicker/locationPicker",
+    "pages/timePicker/timePicker",
+    "pages/detail/detail",
     "pages/index/index",
     "pages/logs/logs",
     "pages/happyWeekend/happyWeekend",
     "pages/mine/mine",
-    "pages/hotel/hotel",
-    "pages/detail/detail"
+    "pages/hotel/hotel"
   ],
   "window": {
     "backgroundTextStyle": "light",

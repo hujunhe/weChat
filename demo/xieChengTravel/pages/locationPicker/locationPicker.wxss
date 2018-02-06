@@ -1,0 +1,79 @@
+/* pages/locationPicker/locationPicker.wxss */
+page{
+  background-color: #efefef;
+}
+
+/*搜索栏*/
+.searchBox{
+  height: cala(90rpx - 17rpx * 2);
+  padding: 17rpx;
+  border-bottom: 1rpx solid #d7d7d7;
+}
+.searchBox input{
+  background-color: #fff;
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 10rpx;
+  padding: 0 15rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+/*选项切换*/
+.localChoose{
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #d7d7d7; 
+  background-color: #fafafa;
+  font-size: 30rpx;
+  
+}
+.localChoose .part{
+  flex: 1 0 auto;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localChoose .part.active{
+  border-bottom: 4rpx solid #479dd8;
+  color: #479dd8;
+}
+.nowLocal {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.normalBox .partT{
+  height: 50rpx;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  padding: 0 30rpx;
+  color: #676767;
+}
+.normalBox .partB{
+  min-height: 54rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24rpx 24rpx 0;
+}
+.box{
+  font-size: 26rpx;
+  color: #606060;
+  width: 150rpx;
+  height: 65rpx;
+  border: 2rpx solid #dcdcdc;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  line-height: 65rpx;
+  margin-right: 24rpx;
+  margin-bottom: 24rpx;
+}
+.word{
+  font-size: 28rpx;
+  margin-bottom: 24rpx;
+}
