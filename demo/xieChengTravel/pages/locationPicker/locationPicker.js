@@ -1,7 +1,7 @@
 // pages/locationPicker/locationPicker.js
 //引入城市json
 const local = require('../../lib/local.js')
-
+let app = getApp()
 Page({
 
   /**
@@ -25,15 +25,17 @@ Page({
   chooseLocalFn (e) {
     console.log(1)
     let area = e.target.dataset.area
-    wx.navigateBack({
-      url: '../../pages/hotel/hotel?area=' + area,
-      success:function(d){
-        console.log(d)
-      },
-      fail:function(d){
-        console.log(d)
-      }
-    })
+    // wx.navigateBack({
+    //   url: '../../pages/hotel/hotel?area=' + area,
+    //   success:function(d){
+    //     console.log(d)
+    //   },
+    //   fail:function(d){
+    //     console.log(d)
+    //   }
+    // })
+    app.globalData.location = area
+    wx.navigateBack()
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

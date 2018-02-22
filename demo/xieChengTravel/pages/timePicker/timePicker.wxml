@@ -8,9 +8,16 @@
  <text class='day'>五</text>
  <text class='day'>六</text> 
 </view>
-<view>
-  <view>2018年2月</view>
-  <view>
-    <text>1</text>
+<view wx:for="{{list}}">
+  <view class='title' >{{item.year}}年{{item.month}}月</view>
+  <view class='dateBox'>
+    <view wx:for="{{item.data}}" class='oneDate {{_item.disable === true?"":"select"}} {{choose.p === index && choose.c === _index ? "on" : ""}}' wx:for-item="_item" wx:for-index="_index">
+    <block wx:if="{{_item.disable === true}}">
+      <text>{{_item.date}}</text>
+    </block>
+    <block wx:else>
+      <text bindtap='chooseDate' data-parent="{{index}}" data-child="{{_index}}">{{_item.date}} <br/> {{choose.p === index && choose.c === _index ? choose.word : ""}}</text>
+    </block>
+    </view>
   </view>
 </view>

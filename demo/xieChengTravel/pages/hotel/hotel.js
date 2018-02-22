@@ -1,4 +1,5 @@
 // pages/hotel/hotel.js
+let app = getApp()
 Page({
 
   /**
@@ -7,6 +8,7 @@ Page({
   data: {
     list:{
       dataType: "hotel",
+      location:'北京',
       data:[{
         imgSrc:"../../asset/hotelPic.jpg",
         name:"北京大方饭店",
@@ -63,7 +65,25 @@ Page({
           prize: 387,
           code:1230
         }]
-    }
+    },
+    list2:{
+      dataType:'hotel',
+      location:'其他',
+      data:[{
+        imgSrc: "../../asset/hotelPic.jpg",
+        name: "其他饭店",
+        score: '5.0',
+        disscusPeople: 1111,
+        level: '五星级',
+        distance: "距离xx市中心7.2公里",
+        near: "xx西站/丽泽商务区",
+        discount: "398返222",
+        prize: 398,
+        code: 1230
+      }]
+    },
+    location:null,
+    searchData:null
   },
 
   /**
@@ -84,7 +104,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    let _list = this.data.list2
+    let date = new Date()
+    this.setData({ location: app.globalData.location})
+    this.setData({ searchData: app.globalData.time || { start: (date.getMonth() + 1) + '-' + date.getDate(), end: (date.getMonth() + 1) + '-' + (date.getDate() + 1)} })
+    // this.setData({list: _list})
+    
   },
 
   /**

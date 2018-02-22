@@ -11,6 +11,40 @@ page{
 }
 .week .day{
   flex: 1 0 auto;
-  text-align: center;
   align-items: center;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  text-align: center;
+  margin: 31rpx 0;
+  font-size: 22rpx;
+}
+.dateBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.oneDate{
+  width:calc(750rpx / 7);
+  height: 106rpx;
+
+  font-size: 22rpx;
+  color: #d1d1d1;
+}
+.oneDate text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.select{
+  color: black;
+}
+.on{
+  background-color: #479dd8;
+  color:#fff;
 }

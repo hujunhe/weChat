@@ -2,7 +2,7 @@
 <view class='localBox'>
   <view class='part9'>
     
-    <navigator url='../locationPicker/locationPicker'><text>北京</text></navigator>
+    <navigator url='../locationPicker/locationPicker'><text>{{location || '北京'}}</text></navigator>
     <!-- <navigator></navigator> -->
   </view>
   <view class='part1'>
@@ -10,10 +10,12 @@
   </view>
 </view>
 <view class='searchBox'>
-  <view class='timeCheck'>
-    <text>住 02-01</text>
-    <text>离 02-02</text>
+  <navigator url="../timePicker/timePicker">
+    <view class='timeCheck'>
+    <text>住 {{searchData.start}}</text>
+    <text>离 {{searchData.end}}</text>
   </view>
+  </navigator>
   <view class='searchInput'>
     <icon type='search' class='icon_search'></icon>
     <input placeholder='关键字/位置/品牌/酒店名'></input>

@@ -4,9 +4,9 @@
     "pages/logs/logs",
     "pages/happyWeekend/happyWeekend",
     "pages/mine/mine",
+    "pages/timePicker/timePicker",
     "pages/hotel/hotel",
     "pages/detail/detail",
-    "pages/timePicker/timePicker",
     "pages/locationPicker/locationPicker"
   ],
   "window": {
