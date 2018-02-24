@@ -1,8 +1,7 @@
 <!--pages/hotel/hotel.wxml-->
 <view class='localBox'>
   <view class='part9'>
-    
-    <navigator url='../locationPicker/locationPicker'><text>{{location || '北京'}}</text></navigator>
+    <navigator url='../locationPicker/locationPicker?type=hotel'><text>{{location || '北京'}}</text></navigator>
     <!-- <navigator></navigator> -->
   </view>
   <view class='part1'>
@@ -12,8 +11,8 @@
 <view class='searchBox'>
   <navigator url="../timePicker/timePicker">
     <view class='timeCheck'>
-    <text>住 {{searchData.start}}</text>
-    <text>离 {{searchData.end}}</text>
+    <text>住 {{searchData.start.date}}</text>
+    <text>离 {{searchData.end.date}}</text>
   </view>
   </navigator>
   <view class='searchInput'>

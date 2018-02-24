@@ -1,0 +1,14 @@
+<!--pages/airplane/airplane.wxml-->
+<view class='box'>
+  <view class='location'>
+   <navigator  class='part' url='../locationPicker/locationPicker?type=airplane&kind=departure'><text>{{departure || '北京'}}</text></navigator> 
+    <image src="../../asset/airTo.jpg"></image>
+    <navigator  class='part' url='../locationPicker/locationPicker?type=airplane&kind=arrived'><text>{{arrived || '北京'}}</text></navigator> 
+  </view>
+  <view class='time'>
+    aass
+  </view>
+  <view class='button'>
+    搜索
+  </view>
+</view>

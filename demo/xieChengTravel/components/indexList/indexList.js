@@ -18,7 +18,7 @@ Component({
     }, {
       name: "机票",
       imgSrc: "",
-      href: ""
+      href: "../../pages/airplane/airplane"
     }, {
       name: "火车票·抢票",
       imgSrc: "",

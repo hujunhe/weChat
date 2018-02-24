@@ -1,5 +1,4 @@
 // pages/timePicker/timePicker.js
-let app = getApp()
 Page({
 
   /**
@@ -120,20 +119,16 @@ Page({
     return arr
   },
   chooseDate(e) {
-    this.setData({ 'choose.p': e.target.dataset.parent, 'choose.c': e.target.dataset.child })
-    let dateY = this.data.list[e.target.dataset.parent].year
-    let dateM = this.data.list[e.target.dataset.parent].month
-    let dateD = this.data.list[e.target.dataset.parent].data[e.target.dataset.child].date
-    if (this.data.time.start === null) {
-      this.setData({ 'time.start': dateM + '-' + dateD})
-    } else {
-      this.setData({ 'time.end': dateM + '-' + dateD })
-      app.globalData.time = {
-        start:this.data.time.start,
-        end:this.data.time.end
-      }
-      wx.navigateBack()
+    
+    if (this.data.time.start === null){
+      this.setData({ 'choose.p': e.target.dataset.parent, 'choose.c': e.target.dataset.child })
+      let dateY = this.data.list[e.target.dataset.parent].year
+      let dateM = this.data.list[e.target.dataset.parent].month
+      let dateD = this.data.list[e.target.dataset.parent].data[e.target.dataset.child].date
+      this.setData({ 'time.start': dateY + '-' + dateM + '-' + dateD})
+    }else{
+      
     }
-    console.log(app.globalData.time)
+    console.log(this.data.choose)
   }
 })

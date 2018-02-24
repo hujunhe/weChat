@@ -8,7 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    provincesList:null
+    provincesList:null,
+    type:''
   },
 
   /**
@@ -16,6 +17,10 @@ Page({
    */
   onLoad: function (options) {
     console.log("地址选择onload")
+    this.setData({type:{
+      type: options.type,
+      kind:options.kind
+    }})
   },
   getLocationFn () {
     let list = local.provinces;
@@ -34,7 +39,15 @@ Page({
     //     console.log(d)
     //   }
     // })
-    app.globalData.location = area
+    if(this.data.type === 'hotel'){
+      app.globalData.location = area
+    } else if (this.data.type.type === 'airplane'){
+      if (this.data.type.kind === 'departure'){
+        app.globalData.airplane.departure = area
+      }else{
+        app.globalData.airplane.arrived = area
+      }
+    }
     wx.navigateBack()
   },
   /**

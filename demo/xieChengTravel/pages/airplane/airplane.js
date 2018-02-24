@@ -1,82 +1,69 @@
-// pages/mine/mine.js
+// pages/airplane/airplane.js
+let app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [{
-      name: '酒店'
-    }, {
-      name: '机票'
-    }, {
-      name: '火车票'
-    }, {
-      name: '汽车票'
-    }, {
-      name: '门票'
-    }, {
-      name: '用车'
-    }, {
-      name: '当地向导'
-    }, {
-      name: '船票'
-    }]
+    departure:null,
+    arrived:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log("机票onload")
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log("机票onshow")
+    this.setData({ departure: app.globalData.airplane.departure, arrived: app.globalData.airplane.arrived})
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+  
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+  
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+  
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+  
   }
 })

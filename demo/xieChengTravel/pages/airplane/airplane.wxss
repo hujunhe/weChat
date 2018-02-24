@@ -1,0 +1,54 @@
+/* pages/airplane/airplane.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #4898dd;
+}
+
+.box{
+  width: 710rpx;
+  margin: 20rpx auto 0;
+  background-color: #fff;
+  height: 35%;
+  border-radius: 10rpx;
+  padding-top: 36rpx;
+}
+.location{
+  display: flex;
+  justify-content: center;
+  height: 82rpx;
+  align-items: center;
+}
+.location image{
+  width: 82rpx;
+  height: 82rpx;
+}
+.location .part{
+  width: 290rpx;
+  border-bottom: 2rpx solid #eaeaea;
+  line-height: 82rpx;
+  font-size: 40rpx;
+  color: #5f6776;
+  text-align: center;
+}
+.time{
+  height: 82rpx;
+  line-height: 82rpx;
+  border-bottom: 2rpx solid #eaeaea;
+  width: calc(290rpx * 2 + 82rpx);
+  margin: 36rpx auto 0;
+  font-size: 35rpx;
+  color: #5f6776;
+}
+.button{
+  height: 20%;
+  width: calc(290rpx * 2 + 82rpx);
+  background-color: #f19f3d;
+  margin: 52rpx auto 0;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #fff;
+}

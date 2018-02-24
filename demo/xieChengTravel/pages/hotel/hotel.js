@@ -107,7 +107,7 @@ Page({
     let _list = this.data.list2
     let date = new Date()
     this.setData({ location: app.globalData.location})
-    this.setData({ searchData: app.globalData.time || { start: (date.getMonth() + 1) + '-' + date.getDate(), end: (date.getMonth() + 1) + '-' + (date.getDate() + 1)} })
+    this.setData({ searchData: app.globalData.time || { start: { date: (date.getMonth() + 1) + '-' + date.getDate() }, end: { date: (date.getMonth() + 1) + '-' + (date.getDate() + 1)}} })
     // this.setData({list: _list})
     
   },

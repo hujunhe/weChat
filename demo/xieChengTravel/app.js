@@ -36,6 +36,10 @@ App({
   globalData: {
     userInfo: null,
     location:null,
-    time:null
+    time:null,
+    airplane:{
+      departure:null,
+      arrived:null
+    }
   }
 })

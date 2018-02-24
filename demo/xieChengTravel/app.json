@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/mine/mine",
     "pages/logs/logs",
     "pages/happyWeekend/happyWeekend",
-    "pages/mine/mine",
     "pages/timePicker/timePicker",
     "pages/hotel/hotel",
+    "pages/airplane/airplane",
     "pages/detail/detail",
     "pages/locationPicker/locationPicker"
   ],
